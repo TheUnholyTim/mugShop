@@ -23,7 +23,7 @@ export default function Header( { active } : Props ) {
           <li>
             <a
               href={menu.href}
-              class={"text-white-500 hover:text-gray-700 py-1 border-gray-500" +
+              class={"${tw`text(white-500 uppercase)`} hover:text-gray-700 py-1 border-gray-500" +
                 (menu.href === active ? " font-bold border-b-2" : "")}
             >
               {menu.name}
